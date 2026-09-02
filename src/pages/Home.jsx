@@ -2,6 +2,8 @@ import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import profile from "../assets/portfolio-image.jpeg"
+
 const Home = () => {
   return (
     <div className=' bg-black text-white min-h-screen p-4 md:flex justify-center items-center '>
@@ -39,7 +41,7 @@ const Home = () => {
       </div>
       <div className=" flex justify-center pt-15">
         <div className=" bg-yellow-300 w-60 h-60 rounded-full flex items-center justify-center">
-          <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600" alt="Profile" className="w-56 h-56 rounded-full object-cover" />
+          <img src={profile} alt="Profile" className="w-56 h-56 rounded-full object-cover" />
         </div>
       </div>
     </div>
