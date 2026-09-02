@@ -3,8 +3,10 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import profile from "../assets/portfolio-image.jpeg"
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate=useNavigate()
   return (
     <div className=' bg-black text-white min-h-screen p-4 md:flex justify-center items-center '>
       <div className=" text-center md:text-left md:w-1/2 flex flex-col justify-center">
@@ -20,7 +22,7 @@ const Home = () => {
        <button className='bg-purple-600 hover:bg-purple-700 text-lg text-white px-2 py-1  rounded'>
          Hire Me <span>→</span>
        </button>
-       <button className='bg-gray-600 hover:bg-gray-700 text-lg text-white px-2 py-1 rounded'>
+       <button onClick={()=>navigate("/projects")} className='bg-gray-600 hover:bg-gray-700 text-lg text-white px-2 py-1 rounded'>
          View Projects <span>→</span>
        </button>
        </div>
